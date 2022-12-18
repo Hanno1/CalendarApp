@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/dropdown_menu_change_event"
+        android:title="@string/change_event"/>
+    <item android:id="@+id/dropdown_menu_delete_event"
+        android:title="@string/delete_event"/>
+</menu>

@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-h320dp-port-v13\\values-h320dp-port-v13.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\hanno\\.gradle\\caches\\transforms-3\\d97567f431aac40cb798b23326a4a681\\transformed\\material-1.7.0\\res\\values-h320dp-port-v13\\values-h320dp-port-v13.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "75",
+                        "endOffsets": "126"
+                    }
+                }
+            ]
+        }
+    ]
+}

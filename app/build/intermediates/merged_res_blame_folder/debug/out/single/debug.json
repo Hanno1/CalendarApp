@@ -1,0 +1,226 @@
+[
+    {
+        "merged": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_normal_event_border.xml.flat",
+        "source": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\src\\main\\res\\drawable-v24\\normal_event_border.xml"
+    },
+    {
+        "merged": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\build\\intermediates\\merged_res\\debug\\layout_layout_notification.xml.flat",
+        "source": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\src\\main\\res\\layout\\layout_notification.xml"
+    },
+    {
+        "merged": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_unselected_icon.xml.flat",
+        "source": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\src\\main\\res\\drawable-v24\\unselected_icon.xml"
+    },
+    {
+        "merged": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\build\\intermediates\\merged_res\\debug\\layout_display_tasks_remove_dialog.xml.flat",
+        "source": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\src\\main\\res\\layout\\display_tasks_remove_dialog.xml"
+    },
+    {
+        "merged": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\build\\intermediates\\merged_res\\debug\\layout_task_details.xml.flat",
+        "source": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\src\\main\\res\\layout\\task_details.xml"
+    },
+    {
+        "merged": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\build\\intermediates\\merged_res\\debug\\layout_layout_main_view.xml.flat",
+        "source": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\src\\main\\res\\layout\\layout_main_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_today_border.xml.flat",
+        "source": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\src\\main\\res\\drawable-v24\\today_border.xml"
+    },
+    {
+        "merged": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\build\\intermediates\\merged_res\\debug\\layout_time_picker.xml.flat",
+        "source": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\src\\main\\res\\layout\\time_picker.xml"
+    },
+    {
+        "merged": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\build\\intermediates\\merged_res\\debug\\drawable_arrow_icon.png.flat",
+        "source": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\src\\main\\res\\drawable\\arrow_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_normal_selected_event_border.xml.flat",
+        "source": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\src\\main\\res\\drawable-v24\\normal_selected_event_border.xml"
+    },
+    {
+        "merged": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_meeting_icon.png.flat",
+        "source": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\src\\main\\res\\drawable-v24\\meeting_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\build\\intermediates\\merged_res\\debug\\drawable_set_time_button_border.xml.flat",
+        "source": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\src\\main\\res\\drawable\\set_time_button_border.xml"
+    },
+    {
+        "merged": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\build\\intermediates\\merged_res\\debug\\layout_add_task_reminder_dialog.xml.flat",
+        "source": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\src\\main\\res\\layout\\add_task_reminder_dialog.xml"
+    },
+    {
+        "merged": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_selected_icon.xml.flat",
+        "source": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\src\\main\\res\\drawable-v24\\selected_icon.xml"
+    },
+    {
+        "merged": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\build\\intermediates\\merged_res\\debug\\drawable_calendar_icon.png.flat",
+        "source": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\src\\main\\res\\drawable\\calendar_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\build\\intermediates\\merged_res\\debug\\layout_display_tasks_edit_dialog.xml.flat",
+        "source": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\src\\main\\res\\layout\\display_tasks_edit_dialog.xml"
+    },
+    {
+        "merged": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_today_event_border.xml.flat",
+        "source": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\src\\main\\res\\drawable-v24\\today_event_border.xml"
+    },
+    {
+        "merged": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\build\\intermediates\\merged_res\\debug\\drawable_alarm_icon.png.flat",
+        "source": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\src\\main\\res\\drawable\\alarm_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\build\\intermediates\\merged_res\\debug\\layout_layout_autostart_permission.xml.flat",
+        "source": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\src\\main\\res\\layout\\layout_autostart_permission.xml"
+    },
+    {
+        "merged": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\build\\intermediates\\merged_res\\debug\\drawable_exclamation.png.flat",
+        "source": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\src\\main\\res\\drawable\\exclamation.png"
+    },
+    {
+        "merged": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\build\\intermediates\\merged_res\\debug\\drawable_btn_standard.xml.flat",
+        "source": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\src\\main\\res\\drawable\\btn_standard.xml"
+    },
+    {
+        "merged": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\build\\intermediates\\merged_res\\debug\\layout_layout_display_tasks.xml.flat",
+        "source": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\src\\main\\res\\layout\\layout_display_tasks.xml"
+    },
+    {
+        "merged": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\build\\intermediates\\merged_res\\debug\\raw_change_page_sound_short_test.mp3.flat",
+        "source": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\src\\main\\res\\raw\\change_page_sound_short_test.mp3"
+    },
+    {
+        "merged": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_today_selected_border.xml.flat",
+        "source": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\src\\main\\res\\drawable-v24\\today_selected_border.xml"
+    },
+    {
+        "merged": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\build\\intermediates\\merged_res\\debug\\drawable_set_ime_button_border_inactive.xml.flat",
+        "source": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\src\\main\\res\\drawable\\set_ime_button_border_inactive.xml"
+    },
+    {
+        "merged": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_close_icon.png.flat",
+        "source": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\src\\main\\res\\drawable-v24\\close_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_normal_border.xml.flat",
+        "source": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\src\\main\\res\\drawable-v24\\normal_border.xml"
+    },
+    {
+        "merged": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\build\\intermediates\\merged_res\\debug\\layout_layout_main_choose_date.xml.flat",
+        "source": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\src\\main\\res\\layout\\layout_main_choose_date.xml"
+    },
+    {
+        "merged": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\build\\intermediates\\merged_res\\debug\\layout_add_task_repeat_dialog.xml.flat",
+        "source": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\src\\main\\res\\layout\\add_task_repeat_dialog.xml"
+    },
+    {
+        "merged": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_plus_icon.png.flat",
+        "source": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\src\\main\\res\\drawable-v24\\plus_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\build\\intermediates\\merged_res\\debug\\drawable_btn_set_time.xml.flat",
+        "source": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\src\\main\\res\\drawable\\btn_set_time.xml"
+    },
+    {
+        "merged": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\build\\intermediates\\merged_res\\debug\\menu_popup.xml.flat",
+        "source": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\src\\main\\res\\menu\\popup.xml"
+    },
+    {
+        "merged": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_normal_selected_border.xml.flat",
+        "source": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\src\\main\\res\\drawable-v24\\normal_selected_border.xml"
+    },
+    {
+        "merged": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\build\\intermediates\\merged_res\\debug\\layout_display_tasks_item.xml.flat",
+        "source": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\src\\main\\res\\layout\\display_tasks_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_today_selected_event_border.xml.flat",
+        "source": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\src\\main\\res\\drawable-v24\\today_selected_event_border.xml"
+    },
+    {
+        "merged": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_email_icon.png.flat",
+        "source": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\src\\main\\res\\drawable-v24\\email_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\build\\intermediates\\merged_res\\debug\\drawable_birthday.png.flat",
+        "source": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\src\\main\\res\\drawable\\birthday.png"
+    },
+    {
+        "merged": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\hanno\\AndroidStudioProjects\\ProjectCalendarApp\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    }
+]

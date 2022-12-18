@@ -1,0 +1,143 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.projectcalendarapp"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+8-->C:\Users\hanno\AndroidStudioProjects\ProjectCalendarApp\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="32" />
+9-->C:\Users\hanno\AndroidStudioProjects\ProjectCalendarApp\app\src\main\AndroidManifest.xml
+10
+11    <!-- give Permission to schedule alarms and do something then the device booted up -->
+12    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+12-->C:\Users\hanno\AndroidStudioProjects\ProjectCalendarApp\app\src\main\AndroidManifest.xml:7:5-79
+12-->C:\Users\hanno\AndroidStudioProjects\ProjectCalendarApp\app\src\main\AndroidManifest.xml:7:22-76
+13    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+13-->C:\Users\hanno\AndroidStudioProjects\ProjectCalendarApp\app\src\main\AndroidManifest.xml:8:5-80
+13-->C:\Users\hanno\AndroidStudioProjects\ProjectCalendarApp\app\src\main\AndroidManifest.xml:8:22-78
+14
+15    <queries />
+15-->C:\Users\hanno\AndroidStudioProjects\ProjectCalendarApp\app\src\main\AndroidManifest.xml:9:5-15
+16
+17    <application
+17-->C:\Users\hanno\AndroidStudioProjects\ProjectCalendarApp\app\src\main\AndroidManifest.xml:10:5-49:19
+18        android:allowBackup="true"
+18-->C:\Users\hanno\AndroidStudioProjects\ProjectCalendarApp\app\src\main\AndroidManifest.xml:11:9-35
+19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+19-->[androidx.core:core:1.8.0] C:\Users\hanno\.gradle\caches\transforms-3\49e7ac19d247264e5ea3dec22f6d785c\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
+20        android:debuggable="true"
+21        android:extractNativeLibs="false"
+22        android:icon="@mipmap/ic_launcher"
+22-->C:\Users\hanno\AndroidStudioProjects\ProjectCalendarApp\app\src\main\AndroidManifest.xml:12:9-43
+23        android:label="@string/app_name"
+23-->C:\Users\hanno\AndroidStudioProjects\ProjectCalendarApp\app\src\main\AndroidManifest.xml:13:9-41
+24        android:roundIcon="@mipmap/ic_launcher_round"
+24-->C:\Users\hanno\AndroidStudioProjects\ProjectCalendarApp\app\src\main\AndroidManifest.xml:14:9-54
+25        android:supportsRtl="true"
+25-->C:\Users\hanno\AndroidStudioProjects\ProjectCalendarApp\app\src\main\AndroidManifest.xml:15:9-35
+26        android:testOnly="true"
+27        android:theme="@style/Theme.ProjectCalendarApp" >
+27-->C:\Users\hanno\AndroidStudioProjects\ProjectCalendarApp\app\src\main\AndroidManifest.xml:16:9-56
+28
+29        <!-- first BroadcastReceiver - active on Device restart -->
+30        <receiver
+30-->C:\Users\hanno\AndroidStudioProjects\ProjectCalendarApp\app\src\main\AndroidManifest.xml:18:9-27:20
+31            android:name="com.example.projectcalendarapp.DeviceRestart"
+31-->C:\Users\hanno\AndroidStudioProjects\ProjectCalendarApp\app\src\main\AndroidManifest.xml:18:19-48
+32            android:enabled="true"
+32-->C:\Users\hanno\AndroidStudioProjects\ProjectCalendarApp\app\src\main\AndroidManifest.xml:20:13-35
+33            android:exported="true"
+33-->C:\Users\hanno\AndroidStudioProjects\ProjectCalendarApp\app\src\main\AndroidManifest.xml:19:13-36
+34            android:permission="android.permission.RECEIVE_BOOT_COMPLETED" >
+34-->C:\Users\hanno\AndroidStudioProjects\ProjectCalendarApp\app\src\main\AndroidManifest.xml:21:13-75
+35            <intent-filter>
+35-->C:\Users\hanno\AndroidStudioProjects\ProjectCalendarApp\app\src\main\AndroidManifest.xml:22:13-26:29
+36                <action android:name="android.intent.action.BOOT_COMPLETED" />
+36-->C:\Users\hanno\AndroidStudioProjects\ProjectCalendarApp\app\src\main\AndroidManifest.xml:23:17-79
+36-->C:\Users\hanno\AndroidStudioProjects\ProjectCalendarApp\app\src\main\AndroidManifest.xml:23:25-76
+37                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+37-->C:\Users\hanno\AndroidStudioProjects\ProjectCalendarApp\app\src\main\AndroidManifest.xml:24:17-81
+37-->C:\Users\hanno\AndroidStudioProjects\ProjectCalendarApp\app\src\main\AndroidManifest.xml:24:25-79
+38
+39                <category android:name="android.intent.category.DEFAULT" />
+39-->C:\Users\hanno\AndroidStudioProjects\ProjectCalendarApp\app\src\main\AndroidManifest.xml:25:17-75
+39-->C:\Users\hanno\AndroidStudioProjects\ProjectCalendarApp\app\src\main\AndroidManifest.xml:25:27-73
+40            </intent-filter>
+41        </receiver>
+42        <!-- second BroadcastReceiver - will schedule and make the alarm -->
+43        <receiver
+43-->C:\Users\hanno\AndroidStudioProjects\ProjectCalendarApp\app\src\main\AndroidManifest.xml:29:9-35:20
+44            android:name="com.example.projectcalendarapp.MyNotification"
+44-->C:\Users\hanno\AndroidStudioProjects\ProjectCalendarApp\app\src\main\AndroidManifest.xml:29:19-49
+45            android:exported="false" >
+45-->C:\Users\hanno\AndroidStudioProjects\ProjectCalendarApp\app\src\main\AndroidManifest.xml:30:13-37
+46            <intent-filter>
+46-->C:\Users\hanno\AndroidStudioProjects\ProjectCalendarApp\app\src\main\AndroidManifest.xml:31:13-34:29
+47                <action android:name="android.media.action.DISPLAY_NOTIFICATION" />
+47-->C:\Users\hanno\AndroidStudioProjects\ProjectCalendarApp\app\src\main\AndroidManifest.xml:32:17-84
+47-->C:\Users\hanno\AndroidStudioProjects\ProjectCalendarApp\app\src\main\AndroidManifest.xml:32:25-81
+48
+49                <category android:name="android.intent.category.DEFAULT" />
+49-->C:\Users\hanno\AndroidStudioProjects\ProjectCalendarApp\app\src\main\AndroidManifest.xml:25:17-75
+49-->C:\Users\hanno\AndroidStudioProjects\ProjectCalendarApp\app\src\main\AndroidManifest.xml:25:27-73
+50            </intent-filter>
+51        </receiver>
+52
+53        <activity
+53-->C:\Users\hanno\AndroidStudioProjects\ProjectCalendarApp\app\src\main\AndroidManifest.xml:36:9-37:39
+54            android:name="com.example.projectcalendarapp.ViewModel.AddTaskView"
+54-->C:\Users\hanno\AndroidStudioProjects\ProjectCalendarApp\app\src\main\AndroidManifest.xml:36:19-56
+55            android:exported="false" />
+55-->C:\Users\hanno\AndroidStudioProjects\ProjectCalendarApp\app\src\main\AndroidManifest.xml:37:13-37
+56        <activity
+56-->C:\Users\hanno\AndroidStudioProjects\ProjectCalendarApp\app\src\main\AndroidManifest.xml:38:9-39:39
+57            android:name="com.example.projectcalendarapp.ViewModel.DisplayTasksView"
+57-->C:\Users\hanno\AndroidStudioProjects\ProjectCalendarApp\app\src\main\AndroidManifest.xml:38:19-61
+58            android:exported="false" />
+58-->C:\Users\hanno\AndroidStudioProjects\ProjectCalendarApp\app\src\main\AndroidManifest.xml:39:13-37
+59        <activity
+59-->C:\Users\hanno\AndroidStudioProjects\ProjectCalendarApp\app\src\main\AndroidManifest.xml:40:9-48:20
+60            android:name="com.example.projectcalendarapp.ViewModel.MainView"
+60-->C:\Users\hanno\AndroidStudioProjects\ProjectCalendarApp\app\src\main\AndroidManifest.xml:41:13-47
+61            android:exported="true"
+61-->C:\Users\hanno\AndroidStudioProjects\ProjectCalendarApp\app\src\main\AndroidManifest.xml:42:13-36
+62            android:label="Calendar" >
+62-->C:\Users\hanno\AndroidStudioProjects\ProjectCalendarApp\app\src\main\AndroidManifest.xml:43:13-37
+63            <intent-filter>
+63-->C:\Users\hanno\AndroidStudioProjects\ProjectCalendarApp\app\src\main\AndroidManifest.xml:44:13-47:29
+64                <action android:name="android.intent.action.MAIN" />
+64-->C:\Users\hanno\AndroidStudioProjects\ProjectCalendarApp\app\src\main\AndroidManifest.xml:45:17-69
+64-->C:\Users\hanno\AndroidStudioProjects\ProjectCalendarApp\app\src\main\AndroidManifest.xml:45:25-66
+65
+66                <category android:name="android.intent.category.LAUNCHER" />
+66-->C:\Users\hanno\AndroidStudioProjects\ProjectCalendarApp\app\src\main\AndroidManifest.xml:46:17-77
+66-->C:\Users\hanno\AndroidStudioProjects\ProjectCalendarApp\app\src\main\AndroidManifest.xml:46:27-74
+67            </intent-filter>
+68        </activity>
+69
+70        <provider
+70-->[androidx.emoji2:emoji2:1.2.0] C:\Users\hanno\.gradle\caches\transforms-3\245b1df8dd46d7fc29d171755fd4ae72\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+71            android:name="androidx.startup.InitializationProvider"
+71-->[androidx.emoji2:emoji2:1.2.0] C:\Users\hanno\.gradle\caches\transforms-3\245b1df8dd46d7fc29d171755fd4ae72\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+72            android:authorities="com.example.projectcalendarapp.androidx-startup"
+72-->[androidx.emoji2:emoji2:1.2.0] C:\Users\hanno\.gradle\caches\transforms-3\245b1df8dd46d7fc29d171755fd4ae72\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+73            android:exported="false" >
+73-->[androidx.emoji2:emoji2:1.2.0] C:\Users\hanno\.gradle\caches\transforms-3\245b1df8dd46d7fc29d171755fd4ae72\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+74            <meta-data
+74-->[androidx.emoji2:emoji2:1.2.0] C:\Users\hanno\.gradle\caches\transforms-3\245b1df8dd46d7fc29d171755fd4ae72\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+75                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+75-->[androidx.emoji2:emoji2:1.2.0] C:\Users\hanno\.gradle\caches\transforms-3\245b1df8dd46d7fc29d171755fd4ae72\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+76                android:value="androidx.startup" />
+76-->[androidx.emoji2:emoji2:1.2.0] C:\Users\hanno\.gradle\caches\transforms-3\245b1df8dd46d7fc29d171755fd4ae72\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+77            <meta-data
+77-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\hanno\.gradle\caches\transforms-3\623870990e9db1b13aa0ffc2f4f271a0\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+78                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+78-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\hanno\.gradle\caches\transforms-3\623870990e9db1b13aa0ffc2f4f271a0\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+79                android:value="androidx.startup" />
+79-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\hanno\.gradle\caches\transforms-3\623870990e9db1b13aa0ffc2f4f271a0\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+80        </provider>
+81    </application>
+82
+83</manifest>

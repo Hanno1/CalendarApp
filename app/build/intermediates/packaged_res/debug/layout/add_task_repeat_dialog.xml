@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:textAlignment="center">
+
+        <CheckBox
+            android:id="@+id/checkBox_days"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/repeat_for"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/editTextNumber_days"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:autofillHints="1"
+            android:maxLength="2"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/days"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:textAlignment="center">
+
+        <CheckBox
+            android:id="@+id/checkBox_weeks"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/repeat_for"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/editTextNumber_weeks"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:autofillHints="1"
+            android:maxLength="2"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/weeks"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:textAlignment="center">
+
+        <CheckBox
+            android:id="@+id/checkBox_months"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/repeat_for"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/editTextNumber_months"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:autofillHints="1"
+            android:maxLength="2"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/months"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:textAlignment="center">
+
+        <CheckBox
+            android:id="@+id/checkBox_years"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/repeat_for"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/editTextNumber_years"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:autofillHints="1"
+            android:maxLength="2"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/years"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/repeat_mode_cancel_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:text="@string/cancel"
+            android:background="@drawable/btn_standard"
+            android:textColor="@color/black"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/repeat_mode_submit_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:text="@string/submit"
+            android:background="@drawable/btn_standard"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
