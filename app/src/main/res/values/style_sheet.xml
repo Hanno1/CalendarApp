@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CalendarViewCustom">
+        <item name="colorAccent">@color/light_green</item>
+        <item name="colorPrimary">@color/light_green</item>
+        <item name="android:textColorPrimary">@color/black</item>
+    </style>
+</resources>

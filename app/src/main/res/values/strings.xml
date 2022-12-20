@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">ProjectCalendarApp</string>
+    <string name="back"><![CDATA[<-]]></string>
+    <string name="forward"><![CDATA[->]]></string>
+    <string name="display_task">DISPLAY TASK</string>
+    <string name="add_task">Add Task</string>
+
+    <string name="Monday">MON</string>
+    <string name="Tuesday">TUE</string>
+    <string name="Wednesday">WED</string>
+    <string name="Thursday">THUR</string>
+    <string name="Friday">FRI</string>
+    <string name="Saturday">SAT</string>
+    <string name="Sunday">SUN</string>
+
+    <string name="MonthMessage">%s %d</string>
+
+    <string name="enter_task_name">Enter Task Name:</string>
+    <string name="set_time">Set Time</string>
+    <string name="set_reminder">Set Reminder</string>
+    <string name="repeat">REPEAT</string>
+    <string name="cancel">Cancel</string>
+    <string name="submit">SUBMIT</string>
+    <string name="task_name">Task Name</string>
+    <string name="change_event">Edit Event</string>
+    <string name="delete_event">Remove Event</string>
+    <string name="repeat_for">Repeat for</string>
+    <string name="days">Days.</string>
+    <string name="months">Months.</string>
+    <string name="years">Years.</string>
+    <string name="weeks">Weeks.</string>
+    <string name="reminder_5">set reminder 2 days before</string>
+    <string name="reminder_4">set reminder 1 day before</string>
+    <string name="reminder_3">set reminder 1 hour before</string>
+    <string name="reminder_2">set reminder 30 min before</string>
+    <string name="reminder_1">set reminder 5 min before</string>
+    <string name="autostart_permission">Do you want to allow this app to have autostart Permissions? If not the app will not be able to function perfectly.</string>
+    <string name="deny_permission">Deny</string>
+    <string name="allow_permission">Give</string>
+    <string name="dont_show_again_cb">Dont show again</string>
+    <string name="repeating_event_edit">This is a repeating Event. Do you want to edit all Events or only this one?</string>
+    <string name="repeating_event_remove">This is a repeating Event. Do you want to remove all Events or only this one?</string>
+    <string name="remove_all_events">all Events</string>
+    <string name="remove_only_this">this Event</string>
+    <string name="edit_all_events">all Events</string>
+    <string name="edit_only_this">this Event</string>
+    <!-- later maybe images! -->
+</resources>

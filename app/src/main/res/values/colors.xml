@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- normalColorTheme -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="background_color">#c8f6cc</color>
+    <color name="gray">#888</color>
+    <color name="blue">#0000DD</color>
+    <color name="calendar_number_color">#000000</color>
+    <color name="calendar_not_this_month_color">#888</color>
+    <color name="dark_blue">#344ec7</color>
+    <color name="teal_200">#0F0F0F</color>
+    <color name="teal_700">#0F0F0F</color>
+    <color name="purple_200">#0F0F0F</color>
+    <color name="purple_500">#0F0F0F</color>
+    <color name="purple_700">#0F0F0F</color>
+    <color name="light_green">#7bc77e</color>
+
+    <color name="light_blue">#daecfb</color>
+    <color name="light_red">#db6d5e</color>
+</resources>

@@ -1,0 +1,721 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewModel.MainView"
+    android:background="@color/background_color"
+    android:id="@+id/ll_all"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_left"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:text="@string/back"
+                android:textColor="@color/gray"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_month_year"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Feb 2021"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:background="@android:color/transparent"/>
+
+            <Button
+                android:id="@+id/btn_right"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:text="@string/forward"
+                android:textColor="@color/blue"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <!-- android:onClick="nextMonthAction" -->
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/Monday"
+                android:textAlignment="center"
+                android:textColor="@color/gray"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/Tuesday"
+                android:textAlignment="center"
+                android:textColor="@color/gray"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/Wednesday"
+                android:textAlignment="center"
+                android:textColor="@color/gray"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/Thursday"
+                android:textAlignment="center"
+                android:textColor="@color/gray"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/Friday"
+                android:textAlignment="center"
+                android:textColor="@color/gray"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/Saturday"
+                android:textAlignment="center"
+                android:textColor="@color/gray"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/Sunday"
+                android:textAlignment="center"
+                android:textColor="@color/gray"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+        <TableLayout
+            android:id="@+id/tl_weeks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:id="@+id/day_1"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/normal_border"
+                    android:textAlignment="center"
+                    android:textColor="@color/calendar_number_color"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/day_2"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/normal_border"
+                    android:textAlignment="center"
+                    android:textColor="@color/calendar_number_color"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/day_3"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/normal_border"
+                    android:textAlignment="center"
+                    android:textColor="@color/calendar_number_color"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/day_4"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/normal_border"
+                    android:textAlignment="center"
+                    android:textColor="@color/calendar_number_color"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/day_5"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/normal_border"
+                    android:textAlignment="center"
+                    android:textColor="@color/calendar_number_color"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/day_6"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/normal_border"
+                    android:textAlignment="center"
+                    android:textColor="@color/calendar_number_color"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/day_7"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/normal_border"
+                    android:textAlignment="center"
+                    android:textColor="@color/calendar_number_color"
+                    android:textSize="20sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:id="@+id/day_8"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/normal_border"
+                    android:textAlignment="center"
+                    android:textColor="@color/calendar_number_color"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/day_9"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/normal_border"
+                    android:textAlignment="center"
+                    android:textColor="@color/calendar_number_color"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/day_10"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/normal_border"
+                    android:textAlignment="center"
+                    android:textColor="@color/calendar_number_color"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/day_11"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/normal_border"
+                    android:textAlignment="center"
+                    android:textColor="@color/calendar_number_color"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/day_12"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/normal_border"
+                    android:textAlignment="center"
+                    android:textColor="@color/calendar_number_color"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/day_13"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/normal_border"
+                    android:textAlignment="center"
+                    android:textColor="@color/calendar_number_color"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/day_14"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/normal_border"
+                    android:textAlignment="center"
+                    android:textColor="@color/calendar_number_color"
+                    android:textSize="20sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:id="@+id/day_15"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/normal_border"
+                    android:textAlignment="center"
+                    android:textColor="@color/calendar_number_color"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/day_16"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/normal_border"
+                    android:textAlignment="center"
+                    android:textColor="@color/calendar_number_color"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/day_17"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/normal_border"
+                    android:textAlignment="center"
+                    android:textColor="@color/calendar_number_color"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/day_18"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/normal_border"
+                    android:textAlignment="center"
+                    android:textColor="@color/calendar_number_color"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/day_19"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/normal_border"
+                    android:textAlignment="center"
+                    android:textColor="@color/calendar_number_color"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/day_20"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/normal_border"
+                    android:textAlignment="center"
+                    android:textColor="@color/calendar_number_color"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/day_21"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/normal_border"
+                    android:textAlignment="center"
+                    android:textColor="@color/calendar_number_color"
+                    android:textSize="20sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:id="@+id/day_22"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/normal_border"
+                    android:textAlignment="center"
+                    android:textColor="@color/calendar_number_color"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/day_23"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/normal_border"
+                    android:textAlignment="center"
+                    android:textColor="@color/calendar_number_color"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/day_24"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/normal_border"
+                    android:textAlignment="center"
+                    android:textColor="@color/calendar_number_color"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/day_25"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/normal_border"
+                    android:textAlignment="center"
+                    android:textColor="@color/calendar_number_color"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/day_26"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/normal_border"
+                    android:textAlignment="center"
+                    android:textColor="@color/calendar_number_color"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/day_27"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/normal_border"
+                    android:textAlignment="center"
+                    android:textColor="@color/calendar_number_color"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/day_28"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/normal_border"
+                    android:textAlignment="center"
+                    android:textColor="@color/calendar_number_color"
+                    android:textSize="20sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:id="@+id/day_29"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/normal_border"
+                    android:textAlignment="center"
+                    android:textColor="@color/calendar_number_color"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/day_30"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/normal_border"
+                    android:textAlignment="center"
+                    android:textColor="@color/calendar_number_color"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/day_31"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/normal_border"
+                    android:textAlignment="center"
+                    android:textColor="@color/calendar_number_color"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/day_32"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/normal_border"
+                    android:textAlignment="center"
+                    android:textColor="@color/calendar_number_color"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/day_33"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/normal_border"
+                    android:textAlignment="center"
+                    android:textColor="@color/calendar_number_color"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/day_34"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/normal_border"
+                    android:textAlignment="center"
+                    android:textColor="@color/calendar_number_color"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/day_35"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/normal_border"
+                    android:textAlignment="center"
+                    android:textColor="@color/calendar_number_color"
+                    android:textSize="20sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:id="@+id/day_36"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/normal_border"
+                    android:textAlignment="center"
+                    android:textColor="@color/calendar_number_color"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/day_37"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/normal_border"
+                    android:textAlignment="center"
+                    android:textColor="@color/calendar_number_color"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/day_38"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/normal_border"
+                    android:textAlignment="center"
+                    android:textColor="@color/calendar_number_color"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/day_39"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/normal_border"
+                    android:textAlignment="center"
+                    android:textColor="@color/calendar_number_color"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/day_40"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/normal_border"
+                    android:textAlignment="center"
+                    android:textColor="@color/calendar_number_color"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/day_41"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/normal_border"
+                    android:textAlignment="center"
+                    android:textColor="@color/calendar_number_color"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/day_42"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/normal_border"
+                    android:textAlignment="center"
+                    android:textColor="@color/calendar_number_color"
+                    android:textSize="20sp" />
+
+            </TableRow>
+
+        </TableLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_add_task"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/dark_blue"
+        android:text="@string/add_task"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/btn_display_task"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/dark_blue"
+        android:text="@string/display_task"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+</LinearLayout>

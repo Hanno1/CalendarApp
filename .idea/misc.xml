@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/hanno/AndroidStudioProjects/ProjectCalendarApp/app/src/main/res/drawable-v24/calendar_cell.xml" value="0.2315" />
+        <entry key="..\:/Users/hanno/AndroidStudioProjects/ProjectCalendarApp/app/src/main/res/drawable-v24/current_day.xml" value="0.2455" />
+        <entry key="..\:/Users/hanno/AndroidStudioProjects/ProjectCalendarApp/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1895" />
+        <entry key="..\:/Users/hanno/AndroidStudioProjects/ProjectCalendarApp/app/src/main/res/drawable-v24/normal_border.xml" value="0.2455" />
+        <entry key="..\:/Users/hanno/AndroidStudioProjects/ProjectCalendarApp/app/src/main/res/drawable-v24/normal_selected_border.xml" value="0.203" />
+        <entry key="..\:/Users/hanno/AndroidStudioProjects/ProjectCalendarApp/app/src/main/res/drawable-v24/selected_icon.xml" value="0.2455" />
+        <entry key="..\:/Users/hanno/AndroidStudioProjects/ProjectCalendarApp/app/src/main/res/drawable-v24/unselected_icon.xml" value="0.2455" />
+        <entry key="..\:/Users/hanno/AndroidStudioProjects/ProjectCalendarApp/app/src/main/res/drawable/btn_set_time.xml" value="0.2455" />
+        <entry key="..\:/Users/hanno/AndroidStudioProjects/ProjectCalendarApp/app/src/main/res/drawable/btn_standard.xml" value="0.2455" />
+        <entry key="..\:/Users/hanno/AndroidStudioProjects/ProjectCalendarApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1895" />
+        <entry key="..\:/Users/hanno/AndroidStudioProjects/ProjectCalendarApp/app/src/main/res/drawable/set_ime_button_border_inactive.xml" value="0.257" />
+        <entry key="..\:/Users/hanno/AndroidStudioProjects/ProjectCalendarApp/app/src/main/res/drawable/set_time_button_border.xml" value="0.2455" />
+        <entry key="..\:/Users/hanno/AndroidStudioProjects/ProjectCalendarApp/app/src/main/res/layout/activity_main.xml" value="0.278125" />
+        <entry key="..\:/Users/hanno/AndroidStudioProjects/ProjectCalendarApp/app/src/main/res/layout/activity_main_new.xml" value="0.3" />
+        <entry key="..\:/Users/hanno/AndroidStudioProjects/ProjectCalendarApp/app/src/main/res/layout/add_task_reminder_dialog.xml" value="0.5" />
+        <entry key="..\:/Users/hanno/AndroidStudioProjects/ProjectCalendarApp/app/src/main/res/layout/add_task_repeat_dialog.xml" value="0.33" />
+        <entry key="..\:/Users/hanno/AndroidStudioProjects/ProjectCalendarApp/app/src/main/res/layout/display_tasks_edit_dialog.xml" value="0.21547669944420692" />
+        <entry key="..\:/Users/hanno/AndroidStudioProjects/ProjectCalendarApp/app/src/main/res/layout/display_tasks_edit_or_remove_dialog.xml" value="0.24625908507909364" />
+        <entry key="..\:/Users/hanno/AndroidStudioProjects/ProjectCalendarApp/app/src/main/res/layout/display_tasks_item.xml" value="0.24625908507909364" />
+        <entry key="..\:/Users/hanno/AndroidStudioProjects/ProjectCalendarApp/app/src/main/res/layout/display_tasks_remove_dialog.xml" value="0.24625908507909364" />
+        <entry key="..\:/Users/hanno/AndroidStudioProjects/ProjectCalendarApp/app/src/main/res/layout/layout_autostart_permission.xml" value="0.24625908507909364" />
+        <entry key="..\:/Users/hanno/AndroidStudioProjects/ProjectCalendarApp/app/src/main/res/layout/layout_display_tasks.xml" value="0.24625908507909364" />
+        <entry key="..\:/Users/hanno/AndroidStudioProjects/ProjectCalendarApp/app/src/main/res/layout/layout_mainView.xml" value="0.33" />
+        <entry key="..\:/Users/hanno/AndroidStudioProjects/ProjectCalendarApp/app/src/main/res/layout/layout_main_choose_date.xml" value="0.24625908507909364" />
+        <entry key="..\:/Users/hanno/AndroidStudioProjects/ProjectCalendarApp/app/src/main/res/layout/layout_main_view.xml" value="0.24625908507909364" />
+        <entry key="..\:/Users/hanno/AndroidStudioProjects/ProjectCalendarApp/app/src/main/res/layout/layout_notification.xml" value="0.24625908507909364" />
+        <entry key="..\:/Users/hanno/AndroidStudioProjects/ProjectCalendarApp/app/src/main/res/layout/task_details.xml" value="0.3120759837177748" />
+        <entry key="..\:/Users/hanno/AndroidStudioProjects/ProjectCalendarApp/app/src/main/res/layout/time_picker.xml" value="0.21675929884566053" />
+        <entry key="..\:/Users/hanno/AndroidStudioProjects/ProjectCalendarApp/app/src/main/res/menu/popup.xml" value="0.24625908507909364" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
