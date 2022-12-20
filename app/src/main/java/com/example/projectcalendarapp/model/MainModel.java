@@ -9,9 +9,17 @@ import java.time.YearMonth;
 import java.util.ArrayList;
 
 public class MainModel {
+    /*
+    This is the MainModel - Its the main interface between the datatables and the view
+    it adds tasks and notification and handles the logic
+     */
+    // all events from the database
     private ArrayList<MyCalendarEvent> events = new ArrayList<>();
+    // events in the current month
     private ArrayList<MyCalendarEvent> eventsInCurrentMonth = new ArrayList<>();
+    // context from the mainView
     private final Context context;
+    // selected Date, from the main view as well
     private LocalDate selectedDate;
 
     public MainModel(Context cont){
@@ -19,13 +27,14 @@ public class MainModel {
         init the Model - get the context from the mainView
          */
         context = cont;
+        // read all events in the database and store them in eventsInCurrentMonth
         getAllEventsFromDatabase();
     }
 
     public ArrayList<int[]> getMonthValues(LocalDate selectedDate)
     {
         /*
-        returns a list of writing color, border color, date
+        returns a list of the font colors, border colors, dates
         events are considered as well
          */
         this.selectedDate = selectedDate;
@@ -35,13 +44,17 @@ public class MainModel {
         ArrayList<Integer> daysInMonth = getDateListForMonth(selectedDate);
 
         // init events in current month
-        getEvents(selectedDate.getMonth().getValue(), selectedDate.getYear());
+        setEventsThisMonth(selectedDate.getMonth().getValue(), selectedDate.getYear());
 
         // search if the currentDate is in the Month
         LocalDate currentDate = LocalDate.now();
         boolean now = (currentDate.getYear() == selectedDate.getYear() &&
                 currentDate.getMonth() == selectedDate.getMonth());
 
+        // The beginning of the font color has to be gray, since the days are from the previous month
+        // the end of the font colors have to be gray as well
+        // One major problem is, that, if the selected date is in the current month we need the
+        // font color of all days before today to be gray as well
         boolean gray = true;
         boolean firstSwitch = false;
         boolean stillGray = false;
@@ -63,6 +76,8 @@ public class MainModel {
             if (gray)
             {
                 if (stillGray){
+                    // if this is the current month -> all days in the past have to be gray
+                    // we actually use another Constant for this, to differentiate
                     currentList = new int[]{Constants.THISMONTHBUTGRAYCOLOR, Constants.NORMALBORDER,
                             currentDay};
                 }
@@ -73,6 +88,7 @@ public class MainModel {
 
             }
             else {
+                // select border color
                 if (now && currentDay == currentDate.getDayOfMonth()){
                     if (selectedDate.getDayOfMonth() == daysInMonth.get(i)){
                         if (isEventToday(currentDay)){
@@ -123,9 +139,10 @@ public class MainModel {
         return returnList;
     }
 
-    private void getEvents(int month, int year) {
+    private void setEventsThisMonth(int month, int year) {
         /*
-        returns a list of events this month, maybe change it a bit since this might be slow
+        returns a list of events this month
+        we just go through all events in the database and look if the event is in the current month
         */
         eventsInCurrentMonth = new ArrayList<>();
         for (MyCalendarEvent event : events){
@@ -163,13 +180,13 @@ public class MainModel {
             int eventDay = model.getDay();
 
             if (eventYear < year) {
-                new EventDbManager(context).removeSpecificEventId(key);
+                new EventDbManager(context).removeSpecificEvent(key);
             }
             else if (eventYear == year && eventMonth < month) {
-                new EventDbManager(context).removeSpecificEventId(key);
+                new EventDbManager(context).removeSpecificEvent(key);
             }
             else if (eventYear == year && eventMonth == month && eventDay < day) {
-                new EventDbManager(context).removeSpecificEventId(key);
+                new EventDbManager(context).removeSpecificEvent(key);
             }
             else {
                 events.add(model);
@@ -180,7 +197,7 @@ public class MainModel {
 
     public ArrayList<MyCalendarEvent> getAllEventsFromDatabaseWithId(int id){
         /*
-        init total list of events
+        get all events from the database with a specific Id, Id here means the EventId obviously
          */
         ArrayList<MyCalendarEvent> returnList = new ArrayList<>();
         Cursor cursor = new EventDbManager(context).readAllEventsWithId(id);
@@ -212,6 +229,7 @@ public class MainModel {
         }
         String[] repeat = repeatString.split(":");
 
+        // handle all different cases for repetitions (days, weeks, months, years)
         int value;
         if (!repeat[0].equals("0")){
             value = Integer.parseInt(repeat[0]);
@@ -286,7 +304,7 @@ public class MainModel {
 
     private boolean isEventThisMonth(MyCalendarEvent event){
         /*
-        return true, if the event is this month
+        return true, if the event is this month (the month of the selected date)
          */
         String[] date = event.getDate().split("-");
 
@@ -300,6 +318,7 @@ public class MainModel {
         /*
         returns a list of all dates in the month.
         Additionally we fill all spaces up to 42 with the last month and the next one
+        this is needed in the mainView -> 42 table entries have t be filled
          */
         ArrayList<Integer> daysInMonthArray = new ArrayList<>();
         YearMonth yearMonth = YearMonth.from(date);
@@ -311,6 +330,7 @@ public class MainModel {
         YearMonth yearPreviousMonth = YearMonth.from(date.minusMonths(1));
         int daysPrevMonth = yearPreviousMonth.lengthOfMonth();
 
+        // init numbers on the panels
         for(int i = 1; i <= 42; i++) {
             if(i < dayOfWeek) {
                 daysInMonthArray.add(daysPrevMonth - (dayOfWeek - i) + 1);
@@ -341,6 +361,7 @@ public class MainModel {
     public void removeEvent(LocalDate date, MyCalendarEvent event) {
         /*
         remove an Event from the Database
+        therefore we override event as well as eventsInCurrentMonth
          */
         selectedDate = date;
 
@@ -371,7 +392,7 @@ public class MainModel {
         ArrayList<MyCalendarEvent> newEventsInCurrentMonth = new ArrayList<>();
         for (MyCalendarEvent tmp : events){
             if (tmp.getUniqueEventId() != event.getUniqueEventId() ||
-                    tmp.getDay() != event.getDay()){
+                    tmp.getId() != event.getId()){
                 newEvents.add(tmp);
                 if (isEventThisMonth(tmp)){
                     newEventsInCurrentMonth.add(tmp);
@@ -380,14 +401,14 @@ public class MainModel {
         }
         events = newEvents;
         eventsInCurrentMonth = newEventsInCurrentMonth;
-        new EventDbManager(context).removeSpecificEvent(event.getUniqueEventId(), event.getId());
+        new EventDbManager(context).removeSpecificEvent(event.getId());
         removeSpecificNotifications(event);
     }
 
     private void addNotifications(MyCalendarEvent event){
         /*
         add Notifications for the current event
-        we need to add a notification for all set alarms
+        we need to add a notification for all alarms chosen by the user
          */
         // add them to the database
         ArrayList<Integer> keys = new NotificationDbManager(context).addNotification(event);
@@ -408,6 +429,7 @@ public class MainModel {
     private void removeNotifications(int uniqueId){
         /*
         remove Notification from the database as well al the current queue
+        uniqueId means the eventId
          */
         ArrayList<Integer> keys = new NotificationDbManager(context).removeNotification(uniqueId);
         for (int key : keys){
@@ -418,6 +440,7 @@ public class MainModel {
     private void removeSpecificNotifications(MyCalendarEvent event){
         /*
         remove Notification from the database as well al the current queue
+        we use the millis for this - since we don't know the unique Notification Id
          */
         ArrayList<Integer> keys = new NotificationDbManager(context).removeSpecificNotificationMillis(event);
         for (int key : keys){

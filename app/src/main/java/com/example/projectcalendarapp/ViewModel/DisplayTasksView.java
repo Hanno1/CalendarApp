@@ -210,6 +210,9 @@ public class DisplayTasksView extends AppCompatActivity implements View.OnClickL
     }
 
     private void initDialogs(){
+        /*
+        init the edit and the remove dialog > will be displayed if you click a specific task
+         */
         edit = new Dialog(this);
         edit.requestWindowFeature(Window.FEATURE_NO_TITLE);
         edit.setCancelable(true);
@@ -230,6 +233,9 @@ public class DisplayTasksView extends AppCompatActivity implements View.OnClickL
     }
 
     private void initCalendarDialog(){
+        /*
+        init change day dialog at the top
+         */
         chooseDateWithCalendar = new Dialog(this);
         chooseDateWithCalendar.requestWindowFeature(Window.FEATURE_NO_TITLE);
         chooseDateWithCalendar.setCancelable(true);
@@ -271,6 +277,9 @@ public class DisplayTasksView extends AppCompatActivity implements View.OnClickL
     }
 
     private void setButtonText(){
+        /*
+        set the selected date at the top
+         */
         Button displayDate = findViewById(R.id.display_tasks_btn_selected_date);
         String message = selectedDate.getDayOfMonth() + "." + selectedDate.getMonth().toString() +
                 "." + selectedDate.getYear();

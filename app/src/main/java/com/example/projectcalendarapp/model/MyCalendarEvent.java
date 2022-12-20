@@ -8,17 +8,18 @@ import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 
 public class MyCalendarEvent implements Serializable {
+    // id is the primary key from the database
+    private long id;
     // Title is the Name of the Event
     // Time is the time like this: 01:12
     // date is saved as Year-Month f.e. 2021-12
-    private long id;
-
     private String title;
     private String time;
     private final String date;
     private String repeatTimes;
     private final int day;
     private int icon;
+    // unique EventId is unique for an event or a chain of events
     private int uniqueEventId;
 
     // reminder saves the Minutes, separated with a :
@@ -85,6 +86,9 @@ public class MyCalendarEvent implements Serializable {
     public void setReminder(String reminder){this.reminder = reminder;}
 
     public LocalDate getLocalDate(){
+        /*
+        translate month, year to the actual date as local date
+         */
         int month = Integer.parseInt(this.getDate().split("-")[1]);
         int year = Integer.parseInt(this.getDate().split("-")[0]);
 
@@ -224,12 +228,14 @@ public class MyCalendarEvent implements Serializable {
         }
         String[] remindersSplit = this.getReminder().split(":");
 
+        // get the actual date to milliseconds
         String myDate = this.getYear() + "/" + this.getMonth() + "/" + this.getDayAsTwoDigits()
                 + " " + this.getHour() + ":" + this.getMinute() + ":00";
 
         LocalDateTime localDateTime = LocalDateTime.parse(myDate,
                 DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss") );
 
+        // get all reminders in milliseconds
         for (String el : remindersSplit){
             long millis = localDateTime.minusMinutes(Integer.parseInt(el))
                     .atZone(ZoneId.systemDefault())
@@ -240,6 +246,9 @@ public class MyCalendarEvent implements Serializable {
     }
 
     public boolean isEventToday(LocalDate selectedDate){
+        /*
+        return true if the event is on the selectedDate
+         */
         return (this.getDay() == selectedDate.getDayOfMonth() &&
                 Integer.parseInt(this.getYear()) == selectedDate.getYear() &&
                 Integer.parseInt(this.getMonth()) == selectedDate.getMonthValue());

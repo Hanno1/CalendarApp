@@ -29,18 +29,30 @@ public class MainController {
     }
 
     public void removeEvent(LocalDate selectedDate, MyCalendarEvent event){
+        /*
+        remove event with the uniqueEventId
+         */
         mainModel.removeEvent(selectedDate, event);
     }
 
     public void removeSpecificEvent(LocalDate selectedDate, MyCalendarEvent event){
+        /*
+        remove Event with the id in the database -> this is realy only one event
+         */
         mainModel.removeSpecificEvent(selectedDate, event);
     }
 
     public ArrayList<MyCalendarEvent> getEventsThisDay(LocalDate date){
+        /*
+        returns a list of all events this day
+         */
         return mainModel.getEventsThisDay(date);
     }
 
-    public ArrayList<MyCalendarEvent> getEventsWithId(int id){
-        return mainModel.getAllEventsFromDatabaseWithId(id);
+    public ArrayList<MyCalendarEvent> getEventsWithId(int eventId){
+        /*
+        returns a list with all events with the eventId
+         */
+        return mainModel.getAllEventsFromDatabaseWithId(eventId);
     }
 }

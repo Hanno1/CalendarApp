@@ -15,7 +15,7 @@ public class EventDbManager extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
         /*
-        create database if it does not exist
+        create database if it does not already exist
          */
         String query = "create table " + DB_EVENTS + "(id integer primary key autoincrement, title text, " +
                 "date text, time text, day integer, icon integer, repeatMode text, " +
@@ -25,9 +25,6 @@ public class EventDbManager extends SQLiteOpenHelper {
 
     @Override
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
-        /*
-        gets called everytime the database changed
-         */
         String query = "DROP TABLE IF EXISTS " + DB_EVENTS;
         sqLiteDatabase.execSQL(query);
         onCreate(sqLiteDatabase);
@@ -62,7 +59,7 @@ public class EventDbManager extends SQLiteOpenHelper {
 
     public Cursor readAllEvents() {
         /*
-        read all events from the database
+        read all events from the database and return a cursor to iterate over them
          */
         SQLiteDatabase database = this.getWritableDatabase();
         String query = "select * from " + DB_EVENTS + " order by id desc";
@@ -72,6 +69,7 @@ public class EventDbManager extends SQLiteOpenHelper {
     public Cursor readAllEventsWithId(int uniqueId) {
         /*
         read all events from the database with the unique Id = unique Id
+        (EventId! not the primary key)
          */
         SQLiteDatabase database = this.getWritableDatabase();
         String query = "select * from " + DB_EVENTS + " where uniqueEventId=?";
@@ -80,7 +78,8 @@ public class EventDbManager extends SQLiteOpenHelper {
 
     public void removeEvent(int uniqueEventId){
         /*
-        remove an event from the database -> get event by the unique id
+        remove an event from the database -> get event by the unique Event id
+        which is not actual unique -> unique for one type of events (repeating or one single)
          */
         SQLiteDatabase database = this.getWritableDatabase();
         String query = "delete from " + DB_EVENTS +
@@ -88,17 +87,7 @@ public class EventDbManager extends SQLiteOpenHelper {
         database.execSQL(query, new String[] {Integer.toString(uniqueEventId)});
     }
 
-    public void removeSpecificEvent(int uniqueEventId, long id){
-        /*
-        remove an event from the database -> get event by the unique id
-         */
-        SQLiteDatabase database = this.getWritableDatabase();
-        String query = "delete from " + DB_EVENTS +
-                " where uniqueEventId=? and id=?";
-        database.execSQL(query, new String[] {Integer.toString(uniqueEventId), Long.toString(id)});
-    }
-
-    public void removeSpecificEventId(long id){
+    public void removeSpecificEvent(long id){
         /*
         remove an event from the database -> get event by the unique id
          */
@@ -110,7 +99,7 @@ public class EventDbManager extends SQLiteOpenHelper {
 
     public void deleteAllEvents() {
         /*
-        delete the entire table
+        delete the entire table... just for testing purposes, not really needed
          */
         SQLiteDatabase database = this.getWritableDatabase();
         String query = "DROP TABLE IF EXISTS " + DB_EVENTS;

@@ -439,6 +439,7 @@ public class AddTaskView extends AppCompatActivity implements View.OnClickListen
             repeatDialog.dismiss();
         });
 
+        // init checkbox listeners > at most one checkbox can be checked at once
         days_cb.setOnCheckedChangeListener((buttonView, isChecked) -> {
             if (isChecked){
                 weeks_cb.setChecked(false);
@@ -521,7 +522,11 @@ public class AddTaskView extends AppCompatActivity implements View.OnClickListen
     }
 
     private void initCalendarDialog() {
-        // TODO
+        /*
+        if you click on the date at the top a calendar should be displayed, there you can choose
+        a new date
+        this will init the custom dialog which will handle this
+         */
         chooseDateWithCalendar = new Dialog(this);
         chooseDateWithCalendar.requestWindowFeature(Window.FEATURE_NO_TITLE);
         chooseDateWithCalendar.setCancelable(true);

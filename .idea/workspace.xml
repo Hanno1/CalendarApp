@@ -17,13 +17,28 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4abc0f4a-7911-4db1-9801-9b7603d0ccb3" name="Default Changelist" comment="" />
+    <list default="true" id="4abc0f4a-7911-4db1-9801-9b7603d0ccb3" name="Default Changelist" comment="Commit all Files... Commenting still to do!">
+      <change beforePath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/projectcalendarapp/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/projectcalendarapp/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/projectcalendarapp/DeviceRestart.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/projectcalendarapp/DeviceRestart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/projectcalendarapp/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/projectcalendarapp/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/projectcalendarapp/MyNotification.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/projectcalendarapp/MyNotification.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/projectcalendarapp/ViewModel/AddTaskView.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/projectcalendarapp/ViewModel/AddTaskView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/projectcalendarapp/ViewModel/DisplayTasksView.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/projectcalendarapp/ViewModel/DisplayTasksView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/projectcalendarapp/model/EventDbManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/projectcalendarapp/model/EventDbManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/projectcalendarapp/model/MainModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/projectcalendarapp/model/MainModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/projectcalendarapp/model/MyCalendarEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/projectcalendarapp/model/MyCalendarEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/projectcalendarapp/model/NotificationDbManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/projectcalendarapp/model/NotificationDbManager.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[57c1f6a4]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[C:\Users\hanno\.android\avd\Pixel_4_API_31_-_Android_12.avd]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -92,7 +107,7 @@
     <property name="cidr.known.project.marker" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="TEXT" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable-v24" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/drawable-v24" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Calendar2" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -167,9 +182,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
       <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
-      <method v="2">
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-      </method>
+      <method v="2" />
     </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -181,6 +194,30 @@
       <option name="presentableId" value="Default" />
       <updated>1668337366628</updated>
     </task>
+    <task id="LOCAL-00001" summary="Commit all Files... Commenting still to do!">
+      <created>1671555325705</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1671555325705</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Commit all Files... Commenting still to do!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit all Files... Commenting still to do!" />
   </component>
 </project>

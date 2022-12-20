@@ -36,6 +36,7 @@ public class DeviceRestart extends BroadcastReceiver {
             long alarm = cursor.getLong(4);
             int iconId = cursor.getInt(5);
 
+            // set notification
             Notification notification = MyNotification.getNotification(context, description, title,
                     iconId);
             MyNotification.scheduleNotificationAbsolute(context, notification, alarm, key);

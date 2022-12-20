@@ -128,6 +128,9 @@ public class Constants {
     }
 
     public static List<Intent> POWER_MANAGER_INTENTS = Arrays.asList(
+            /*
+            needed for the autostart permission
+             */
             new Intent().setComponent(new ComponentName("com.miui.securitycenter", "com.miui.permcenter.autostart.AutoStartManagementActivity")),
             new Intent().setComponent(new ComponentName("com.letv.android.letvsafe", "com.letv.android.letvsafe.AutobootManageActivity")),
             new Intent().setComponent(new ComponentName("com.huawei.systemmanager", "com.huawei.systemmanager.optimize.process.ProtectActivity")),
@@ -142,6 +145,9 @@ public class Constants {
 
 
     public static void startPowerSaverIntent(Context context) {
+        /*
+        on some devices the app needs a autostart permission - this dialog will ask for it
+         */
         SharedPreferences settings = context.getSharedPreferences("ProtectedApps", Context.MODE_PRIVATE);
         boolean skipMessage = settings.getBoolean("skipProtectedAppCheck", false);
         if (!skipMessage) {
@@ -151,6 +157,7 @@ public class Constants {
                 if (isCallable(context, intent)) {
                     foundCorrectIntent = true;
 
+                    // build the custom autostart dialog
                     Dialog autostartDialog = new Dialog(context);
                     autostartDialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
                     autostartDialog.setCancelable(true);

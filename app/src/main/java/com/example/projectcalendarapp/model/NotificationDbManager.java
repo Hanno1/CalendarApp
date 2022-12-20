@@ -28,9 +28,6 @@ public class NotificationDbManager extends SQLiteOpenHelper {
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        /*
-        is called everytime the database is updated
-         */
         String query = "DROP TABLE IF EXISTS " + DB_NOTIFICATIONS;
         db.execSQL(query);
         onCreate(db);
@@ -39,7 +36,7 @@ public class NotificationDbManager extends SQLiteOpenHelper {
     public ArrayList<Integer> addNotification(MyCalendarEvent event){
         /*
         add notifications for the current event to the database
-        might be more then one notification
+        might be more than one notification -> get the list of milliseconds from event.getAlarmTime...
          */
         SQLiteDatabase database = this.getReadableDatabase();
         ArrayList<Long> allNotifications = event.getAlarmTimeInMillis();
@@ -129,7 +126,7 @@ public class NotificationDbManager extends SQLiteOpenHelper {
 
     public ArrayList<Integer> getSpecificPosition(int eventId, ArrayList<Long> timeInMillis){
         /*
-        get all Ids there eventId == eventId as arraylist
+        get all Ids there eventId == eventId as arraylist and alarm time in millis == time in millis
          */
         SQLiteDatabase database = this.getWritableDatabase();
         ArrayList<Integer> keys = new ArrayList<>();

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.projectcalendarapp">
 
     <!-- give Permission to schedule alarms and do something then the device booted up -->
@@ -25,7 +24,7 @@
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </receiver>
-        <!-- second BroadcastReceiver - will schedule and make the alarm -->
+        <!-- second BroadcastReceiver - will schedule and make the alarm (Notification) -->
         <receiver android:name=".MyNotification"
             android:exported="false">
             <intent-filter>

@@ -18,7 +18,6 @@ public class MyNotification extends BroadcastReceiver {
     This class will handle all Notifications
     scheduling, removing, displaying, adding and so on
      */
-
     // all notification settings
     // what do we need from the intent
     public static final String NOTIFICATION_ID = "notification-id";
@@ -108,6 +107,7 @@ public class MyNotification extends BroadcastReceiver {
         builder.setColor(ContextCompat.getColor(context, R.color.light_red));
         builder.setVisibility(NotificationCompat.VISIBILITY_PUBLIC);
 
+        // set the icon of the notification
         if (iconId == Constants.ICON_ID_NORMAL){
             builder.setLargeIcon(((BitmapDrawable) Objects.requireNonNull(ContextCompat.getDrawable(context,
                     R.drawable.exclamation))).getBitmap());
